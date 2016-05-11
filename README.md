@@ -1,2 +1,2 @@
-tuUI
+tuAdmin
 ====
