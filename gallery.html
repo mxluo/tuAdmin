@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="renderer" content="webkit">
+    <title>tuAdmin</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/tu.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-admin-top" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">tuAdmin</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbar-admin-top">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">主页</a></li>
+                        <li><a href="#">消息 <span class="badge">4</span></a></li>
+                        <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Admin <span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="#"> 设置 <span class="glyphicon glyphicon-cog"></span></a></li>
+                            <li><a href="#"> 退出 <span class="glyphicon glyphicon-log-out"></span></a></li>
+                          </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid main">
+        <div class="row">
+
+            <div class="col-xs-6 col-sm-3 menu-left">
+                <div class="list-group">
+                    <a href="index.html" class="list-group-item">
+                        <span class="glyphicon glyphicon-home"></span>
+                        <span class="menu-name">Dashboard</span>
+                    </a>
+                    <a href="table.html" class="list-group-item">
+                        <span class="glyphicon glyphicon-th-list"></span>
+                        <span class="menu-name">表格</span>
+                    </a>
+                    <a href="form.html" class="list-group-item">
+                        <span class="glyphicon glyphicon-list-alt"></span>
+                        <span class="menu-name">表单</span>
+                    </a>
+                    <a href="gallery.html" class="list-group-item">
+                        <span class="glyphicon glyphicon-picture"></span>
+                        <span class="menu-name">相册</span>
+                    </a>
+                    <a href="text.html" class="list-group-item">
+                        <span class="glyphicon glyphicon-text-size"></span>
+                        <span class="menu-name">文本</span>
+                    </a>
+                    <a href="other.html" class="list-group-item">
+                        <span class="glyphicon glyphicon-shopping-cart"></span>
+                        <span class="menu-name">其他</span>
+                    </a>
+                    <a href="login.html" class="list-group-item">
+                        <span class="glyphicon glyphicon-log-in"></span>
+                        <span class="menu-name">登录</span>
+                    </a>
+
+                    <!-- collapse menu demo -->
+                    <a href="#demo-sub" class="list-group-item collapsed" data-toggle="collapse">
+                        <span class="menu-name">DEMO</span>
+                        <span class="glyphicon arrow"></span>
+                    </a>
+                    <div id="demo-sub" class="collapse" style="height: 0px;">
+                        <a href="#demo-sub-sub" class="list-group-item collapsed" data-toggle="collapse">
+                            <span class="menu-name">SUB1</span>
+                            <span class="glyphicon arrow"></span>
+                        </a>
+                        <div id="demo-sub-sub" class="collapse" style="height: 0px;">
+                            <a href="" class="list-group-item">
+                                <span class="menu-name">SUBSUB1</span>
+                            </a>
+                            <a href="" class="list-group-item">
+                                <span class="menu-name">SUBSUB2</span>
+                            </a>
+                            <a href="" class="list-group-item">
+                                <span class="menu-name">SUBSUB3</span>
+                            </a>
+                        </div>
+                        <a href="" class="list-group-item">
+                            <span class="menu-name">SUB2</span>
+                        </a>
+                    </div>
+                    <!-- collapse menu demo end -->
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-9 main-content">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"><a href="javascript:;" class="toggle-sidebar"><span class="glyphicon arrow"></span></a>Gallery</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="content-box">
+                            <h4 class="content-title">相册</h4>
+                            <div class="content-body">
+                                <div class="row text-center">
+
+                                    <div class="col-xs-6 col-sm-4 col-md-3">
+                                        <div class="thumb">
+                                            <div class="img-box-out">
+                                                <div class="img-box-in">
+                                                    <img src="img/demo.jpg" alt="简洁实用的桌子">
+                                                    <a class="zoom" href="javascript:;">
+                                                    <span class="glyphicon glyphicon-zoom-in"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="caption">
+                                                <p class="title">简洁实用的桌子</p>
+                                                <p>2016-05-26 13:20</p>
+                                                <p><a href="#" class="btn btn-sm btn-primary">编辑</a> <a href="#" class="btn btn-sm btn-default">删除</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-4 col-md-3">
+                                        <div class="thumb">
+                                            <div class="img-box-out">
+                                                <div class="img-box-in">
+                                                    <img src="img/demo2.jpg" alt="简洁实用的桌子">
+                                                    <a class="zoom" href="javascript:;">
+                                                    <span class="glyphicon glyphicon-zoom-in"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="caption">
+                                                <p class="title">简洁实用的桌子</p>
+                                                <p>2016-05-26 13:20</p>
+                                                <p><a href="#" class="btn btn-sm btn-primary">编辑</a> <a href="#" class="btn btn-sm btn-default">删除</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-4 col-md-3">
+                                        <div class="thumb">
+                                            <div class="img-box-out">
+                                                <div class="img-box-in">
+                                                    <img src="img/demo3.jpg" alt="简洁实用的桌子">
+                                                    <a class="zoom" href="javascript:;">
+                                                    <span class="glyphicon glyphicon-zoom-in"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="caption">
+                                                <p class="title">简洁实用的桌子</p>
+                                                <p>2016-05-26 13:20</p>
+                                                <p><a href="#" class="btn btn-sm btn-primary">编辑</a> <a href="#" class="btn btn-sm btn-default">删除</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-4 col-md-3">
+                                        <div class="thumb">
+                                            <div class="img-box-out">
+                                                <div class="img-box-in">
+                                                    <img src="img/demo.jpg" alt="简洁实用的桌子">
+                                                    <a class="zoom" href="javascript:;">
+                                                    <span class="glyphicon glyphicon-zoom-in"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="caption">
+                                                <p class="title">简洁实用的桌子</p>
+                                                <p>2016-05-26 13:20</p>
+                                                <p><a href="#" class="btn btn-sm btn-primary">编辑</a> <a href="#" class="btn btn-sm btn-default">删除</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-4 col-md-3">
+                                        <div class="thumb">
+                                            <div class="img-box-out">
+                                                <div class="img-box-in">
+                                                    <img src="img/demo2.jpg" alt="简洁实用的桌子">
+                                                    <a class="zoom" href="javascript:;">
+                                                    <span class="glyphicon glyphicon-zoom-in"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="caption">
+                                                <p class="title">简洁实用的桌子</p>
+                                                <p>2016-05-26 13:20</p>
+                                                <p><a href="#" class="btn btn-sm btn-primary">编辑</a> <a href="#" class="btn btn-sm btn-default">删除</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-4 col-md-3">
+                                        <div class="thumb">
+                                            <div class="img-box-out">
+                                                <div class="img-box-in">
+                                                    <img src="img/demo3.jpg" alt="简洁实用的桌子">
+                                                    <a class="zoom" href="javascript:;">
+                                                    <span class="glyphicon glyphicon-zoom-in"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="caption">
+                                                <p class="title">简洁实用的桌子</p>
+                                                <p>2016-05-26 13:20</p>
+                                                <p><a href="#" class="btn btn-sm btn-primary">编辑</a> <a href="#" class="btn btn-sm btn-default">删除</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="copyright text-center">
+            <p><b><a href="https://github.com/mxluo/tuAdmin">tuAdmin</a></b>&nbsp;&nbsp;A simple admin template</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/tu.js"></script>
+</body>
+</html>
