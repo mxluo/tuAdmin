@@ -161,6 +161,15 @@ input, button {
             }
         }        
     }
+    .logo {
+        height: 50px;
+        line-height: 50px;
+        color: #fff;
+        font-weight: bold;
+        img {
+            height: 50px;
+        }
+    }
 }
 //container
 .panel {
@@ -204,6 +213,30 @@ input, button {
             }
         }
     }
+    .list-group {
+        border-bottom: 1px solid #ddd;
+        .list-group-item {
+            border-left: none;
+            border-right: none;
+            border-bottom: none;
+            border-radius: 0;
+            .arrow {
+                &:before {
+                    content: "\e114";
+                }
+            }
+            &.collapsed,>.collapsed {
+                .arrow {
+                    &:before {
+                        content: "\e080";
+                    }
+                }
+            }
+            &:last-child {
+                border-bottom-size:1px;
+            }
+        }
+    }
     .menu-left {
         width: 20%;
         min-height: 550px;
@@ -215,22 +248,9 @@ input, button {
             width: 50%;
         }
         .list-group-item {
-            border-left: none;
-            border-right: none;
-            border-radius: 0;
             .arrow {
                 margin-right: 8px;
                 float: right;
-                &:before {
-                    content: "\e114";
-                }
-            }
-            &.collapsed {
-                .arrow {
-                    &:before {
-                        content: "\e080";
-                    }
-                }
             }
             &:hover {
                 background-color: transparent;
@@ -469,6 +489,23 @@ body.login {
             margin-top: 10px;
             margin-bottom: 5px;
             font-weight: bold;
+        }
+    }
+}
+
+//collapse-list
+.collapse-list {
+    .list-group {
+        ul {
+            padding-left: 10px;
+        }
+    }
+    .btn-group {
+        float: right;
+        .btn-text {
+            @media (max-width:479px) {
+                display: none;
+            }
         }
     }
 }

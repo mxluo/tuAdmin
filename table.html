@@ -27,7 +27,9 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">tuAdmin</a>
+                    <a class="logo" href="#">
+                        <img src="img/logo.png" alt="tuAdmin">
+                    </a>
                 </div>
 
                 <div class="collapse navbar-collapse" id="navbar-admin-top">
@@ -67,10 +69,6 @@
                     <a href="gallery.html" class="list-group-item">
                         <span class="glyphicon glyphicon-picture"></span>
                         <span class="menu-name">相册</span>
-                    </a>
-                    <a href="text.html" class="list-group-item">
-                        <span class="glyphicon glyphicon-text-size"></span>
-                        <span class="menu-name">文本</span>
                     </a>
                     <a href="other.html" class="list-group-item">
                         <span class="glyphicon glyphicon-shopping-cart"></span>
@@ -120,7 +118,7 @@
                             <h4 class="content-title">表格</h4>
                             <div class="content-body">
                                 <div class="row toolbar">
-                                    <div class="col-md-6">
+                                    <div class="col-sm-6">
                                         <button type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-plus"></span>&nbsp;新增</button>
                                         <div class="btn-group" role="group">
                                             <button type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-floppy-disk"></span>&nbsp;保存</button>
@@ -128,7 +126,7 @@
                                             <button type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-trash"></span>&nbsp;删除</button>
                                         </div>
                                     </div>
-                                    <div class="col-md-3">
+                                    <div class="col-sm-3">
                                         <div class="btn-group">
                                             <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                 <span class="word-default">所有分类</span>
@@ -141,7 +139,7 @@
                                             </ul>
                                         </div>
                                     </div>
-                                    <div class="col-md-3">
+                                    <div class="col-sm-3">
                                         <div class="input-group">
                                             <input type="text" class="form-control" placeholder="Search for...">
                                             <span class="input-group-btn">
@@ -152,70 +150,72 @@
                                         </div>
                                     </div>
                                 </div>
-                                <table class="table batch-list">
-                                    <thead>
-                                        <tr>
-                                            <th>
-                                                <input type="checkbox" class="chkall">
-                                            </th>
-                                            <th>First Name</th>
-                                            <th>Last Name</th>
-                                            <th>Username</th>
-                                            <th>Time</th>
-                                            <th>操作</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <th scope="row">
-                                                <input type="checkbox" class="chk" name="ids[]" value="1">
-                                            </th>
-                                            <td>Mark</td>
-                                            <td>Otto</td>
-                                            <td>@mdo</td>
-                                            <td>2016-05-23 18:00:00</td>
-                                            <td>
-                                                <div class="btn-group" role="group">
-                                                    <button type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-edit"></span>&nbsp;编辑</button>
-                                                    <button type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-eye-open"></span>&nbsp;查看</button>
-                                                    <button type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-remove"></span>&nbsp;删除</button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">
-                                                <input type="checkbox" class="chk" name="ids[]" value="1">
-                                            </th>
-                                            <td>Mark</td>
-                                            <td>Otto</td>
-                                            <td>@mdo</td>
-                                            <td>2016-05-23 18:00:00</td>
-                                            <td>
-                                                <div class="btn-group" role="group">
-                                                    <button type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-edit"></span>&nbsp;编辑</button>
-                                                    <button type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-eye-open"></span>&nbsp;查看</button>
-                                                    <button type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-remove"></span>&nbsp;删除</button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">
-                                                <input type="checkbox" class="chk" name="ids[]" value="1">
-                                            </th>
-                                            <td>Mark</td>
-                                            <td>Otto</td>
-                                            <td>@mdo</td>
-                                            <td>2016-05-23 18:00:00</td>
-                                            <td>
-                                                <div class="btn-group" role="group">
-                                                    <button type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-edit"></span>&nbsp;编辑</button>
-                                                    <button type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-eye-open"></span>&nbsp;查看</button>
-                                                    <button type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-remove"></span>&nbsp;删除</button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                <div class="table-responsive">
+                                    <table class="table batch-list">
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    <input type="checkbox" class="chkall">
+                                                </th>
+                                                <th>First Name</th>
+                                                <th>Last Name</th>
+                                                <th>Username</th>
+                                                <th>Time</th>
+                                                <th>操作</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">
+                                                    <input type="checkbox" class="chk" name="ids[]" value="1">
+                                                </th>
+                                                <td>Mark</td>
+                                                <td>Otto</td>
+                                                <td>@mdo</td>
+                                                <td>2016-05-23 18:00:00</td>
+                                                <td>
+                                                    <div class="btn-group" role="group">
+                                                        <button type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-edit"></span>&nbsp;编辑</button>
+                                                        <button type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-eye-open"></span>&nbsp;查看</button>
+                                                        <button type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-remove"></span>&nbsp;删除</button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">
+                                                    <input type="checkbox" class="chk" name="ids[]" value="1">
+                                                </th>
+                                                <td>Mark</td>
+                                                <td>Otto</td>
+                                                <td>@mdo</td>
+                                                <td>2016-05-23 18:00:00</td>
+                                                <td>
+                                                    <div class="btn-group" role="group">
+                                                        <button type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-edit"></span>&nbsp;编辑</button>
+                                                        <button type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-eye-open"></span>&nbsp;查看</button>
+                                                        <button type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-remove"></span>&nbsp;删除</button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">
+                                                    <input type="checkbox" class="chk" name="ids[]" value="1">
+                                                </th>
+                                                <td>Mark</td>
+                                                <td>Otto</td>
+                                                <td>@mdo</td>
+                                                <td>2016-05-23 18:00:00</td>
+                                                <td>
+                                                    <div class="btn-group" role="group">
+                                                        <button type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-edit"></span>&nbsp;编辑</button>
+                                                        <button type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-eye-open"></span>&nbsp;查看</button>
+                                                        <button type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-remove"></span>&nbsp;删除</button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                                 <nav class="text-center">
                                     <ul class="pagination">
                                         <li><a href="#">«</span></a></li>
