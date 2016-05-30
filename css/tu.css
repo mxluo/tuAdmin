@@ -103,7 +103,7 @@ input, button {
 }
 
 /* line 128, ../sass/tu.scss */
-.btn-sm .glyphicon {
+.btn-sm .glyphicon, .btn-xs .glyphicon {
   top: 2px;
 }
 
@@ -510,6 +510,10 @@ body.login a {
 /* line 503, ../sass/tu.scss */
 .collapse-list .btn-group {
   float: right;
+}
+/* line 505, ../sass/tu.scss */
+.collapse-list .btn-group .btn-text {
+  padding-left: 3px;
 }
 @media (max-width: 479px) {
   /* line 505, ../sass/tu.scss */
