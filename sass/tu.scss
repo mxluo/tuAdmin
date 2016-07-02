@@ -180,7 +180,7 @@ input, button {
             border-color: $lightgray-dark;
             color: $darkgray-dark;
             .toggle-sidebar {
-                margin-right: 15px;
+                margin-right: 8px;
             }
         }
     }
@@ -200,7 +200,8 @@ input, button {
         .toggle-sidebar {
             .arrow {
                 &:before {
-                    content: "\e079";
+                    // content: "\e079";
+                    content: "\e251";
                 }
             }
         }
@@ -215,6 +216,9 @@ input, button {
     }
     .list-group {
         border-bottom: 1px solid #ddd;
+        .collapse,.collapsing {
+            margin-left: 10px;
+        }
         .list-group-item {
             border-left: none;
             border-right: none;
@@ -269,7 +273,8 @@ input, button {
             .toggle-sidebar {
                 .arrow {
                     &:before {
-                        content: "\e080";
+                        // content: "\e080";
+                        content: "\e250";
                     }
                 }
             }
@@ -441,7 +446,7 @@ body.login {
         bottom: 0;
         padding: 0;
         background-color: rgba(100,100,100,.5);
-        z-index: 9;
+        z-index: 1999;
         .img-box-in {
             position: relative;
             width: 600px;
@@ -472,6 +477,43 @@ body.login {
     // width: 300px;
     input {
         display: none;
+    }
+}
+.img-uploaded-noimg {
+    height: 30px;
+    line-height: 30px;
+    .img-box-out {
+        padding: 0;
+        img {
+            display: none;
+        }
+        a {
+            display: inline-block;
+            margin-right: 15px;
+            text-decoration: none;
+        }
+        .look-img .glyphicon {
+            display: none;
+        }
+        &.big {
+            img {
+                display: block;
+            }
+            .look-img {
+                position: absolute;
+                top: 5px;
+                right: 5px;
+                width: 30px;
+                height: 30px;
+                margin-right: 0;
+                color: #fff;
+                font-size: 0;
+                .glyphicon {
+                    font-size: 30px;
+                    display: block;
+                }
+            }
+        }
     }
 }
 

@@ -120,40 +120,51 @@
             <div class="col-xs-12 col-sm-9 main-content">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h3 class="panel-title"><a href="javascript:;" class="toggle-sidebar"><span class="glyphicon arrow"></span></a>Dashboard</h3>
+                        <h3 class="panel-title"><a href="javascript:;" class="toggle-sidebar"><span class="glyphicon arrow"></span></a>Other</h3>
                     </div>
                     <div class="panel-body">
                         <div class="content-box">
-                            <h4 class="content-title">基本信息</h4>
+                            <h4 class="content-title">三级联动下拉列表</h4>
                             <div class="content-body">
-                                <div class="note">
-                                    <div class="note-item alert-success">
-                                        <span class="note-title">新增商品</span>
-                                        <br/>
-                                        <span class="note-content">1600</span>
+                                <form class="form-horizontal">
+                                    <!-- linkage-select -->
+                                    <div class="form-group linkage-select1">
+                                        <label class="col-sm-2 control-label">选择分类</label>
+                                        <div class="col-sm-3">
+                                            <select class="form-control">
+                                                <option>请选择</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <select class="form-control">
+                                                <option>请选择</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <select class="form-control">
+                                                <option>请选择</option>
+                                            </select>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="note">
-                                    <div class="note-item alert-info">
-                                        <span class="note-title">新增订单</span>
-                                        <br/>
-                                        <span class="note-content">123</span>
+                                    <div class="form-group linkage-select2">
+                                        <label class="col-sm-2 control-label">修改分类</label>
+                                        <div class="col-sm-3">
+                                            <select class="form-control" data-default-val="1">
+                                            <option>请选择</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <select class="form-control" data-default-val="13">
+                                            <option>请选择</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <select class="form-control" data-default-val="123">
+                                            <option>请选择</option>
+                                            </select>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="note">
-                                    <div class="note-item alert-warning">
-                                        <span class="note-title">新增访问</span>
-                                        <br/>
-                                        <span class="note-content">233</span>
-                                    </div>
-                                </div>
-                                <div class="note">
-                                    <div class="note-item alert-danger">
-                                        <span class="note-title">用户数量</span>
-                                        <br/>
-                                        <span class="note-content">22300</span>
-                                    </div>
-                                </div>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -174,5 +185,13 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/tu.js"></script>
+    <script>
+    $(function() {
+        var selectdata = {"1":{"name":"\u7535\u5b50\u8bbe\u5907","children":{"11":{"name":"\u624b\u673a","children":{"103":{"name":"\u82f9\u679c\u624b\u673a"},"104":{"name":"\u5b89\u5353\u624b\u673a"},"105":{"name":"\u8001\u4eba\u624b\u673a"}}},"13":{"name":"\u7535\u8111","children":{"113":{"name":"\u82f9\u679c\u7535\u8111"},"123":{"name":"\u8054\u60f3\u7535\u8111"},"134":{"name":"\u60e0\u666e\u7535\u8111"}}},"18":{"name":"\u914d\u4ef6","children":{"276":{"name":"\u5145\u7535\u5668"},"277":{"name":"\u6570\u636e\u7ebf"},"234":{"name":"\u786c\u76d8"}}}}},"2":{"name":"\u5bb6\u7528\u7535\u5668","children":{"31":{"name":"\u51b0\u7bb1","children":{"303":{"name":"\u6d77\u5c14\u51b0\u7bb1"},"304":{"name":"\u65b0\u98de\u51b0\u7bb1"},"305":{"name":"\u7f8e\u7684\u51b0\u7bb1"}}},"32":{"name":"\u7a7a\u8c03","children":{"313":{"name":"\u667a\u80fd\u7a7a\u8c03"},"323":{"name":"\u4e2d\u592e\u7a7a\u8c03"},"334":{"name":"\u8ff7\u4f60\u7a7a\u8c03"}}}}}};
+
+        $('.linkage-select1').linkage_select(selectdata);
+        $('.linkage-select2').linkage_select(selectdata);
+    });
+    </script>
 </body>
 </html>
