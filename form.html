@@ -7,6 +7,7 @@
     <meta name="renderer" content="webkit">
     <title>tuAdmin</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="css/tu.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -70,10 +71,19 @@
                         <span class="glyphicon glyphicon-picture"></span>
                         <span class="menu-name">相册</span>
                     </a>
-                    <a href="other.html" class="list-group-item">
+                    <a href="#other-sub" class="list-group-item collapsed" data-toggle="collapse">
                         <span class="glyphicon glyphicon-shopping-cart"></span>
                         <span class="menu-name">其他</span>
+                        <span class="glyphicon arrow"></span>
                     </a>
+                    <div id="other-sub" class="collapse" style="height: 0px;">
+                        <a href="other-list.html" class="list-group-item">
+                            <span class="menu-name">折叠列表</span>
+                        </a>
+                        <a href="other-select.html" class="list-group-item">
+                            <span class="menu-name">联动下拉列表</span>
+                        </a>
+                    </div>
                     <a href="login.html" class="list-group-item">
                         <span class="glyphicon glyphicon-log-in"></span>
                         <span class="menu-name">登录</span>
@@ -142,21 +152,20 @@
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label class="col-sm-2 control-label">发布日期</label>
-                                            <div class="col-sm-6">
-                                                <input type="date" class="form-control" placeholder="Date">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="col-sm-2 control-label">发布时间</label>
-                                            <div class="col-sm-6">
-                                                <input type="datetime-local" class="form-control" placeholder="Time">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
                                             <label class="col-sm-2 control-label">价格</label>
                                             <div class="col-sm-6">
                                                 <input type="number" class="form-control" placeholder="价格">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">发布日期</label>
+                                            <div class="col-sm-6">
+                                                <div class="input-group date">
+                                                    <input type="text" class="form-control" value="2016-07-02">
+                                                    <div class="input-group-addon">
+                                                        <span class="glyphicon glyphicon-th"></span>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="form-group">
@@ -210,8 +219,28 @@
                                                             <a class="zoom" href="javascript:;">
                                                             <span class="glyphicon glyphicon-zoom-in"></span>
                                                             </a>
-                                                            <a class="remove" href="javascript:;">
+                                                            <a class="remove del-img" href="javascript:;">
                                                             <span class="glyphicon glyphicon-remove"></span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <input type="file" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">更新图片2</label>
+                                            <div class="col-sm-6">
+                                                <div class="img-uploaded img-uploaded-noimg">
+                                                    <div class="img-box-out">
+                                                        <div class="img-box-in">
+                                                            <img src="img/demo.jpg">
+                                                            <a class="look-img" href="javascript:;">
+                                                            <span class="glyphicon glyphicon-remove"></span>
+                                                            查看图片
+                                                            </a>
+                                                            <a class="del-img" href="javascript:;">
+                                                            删除图片
                                                             </a>
                                                         </div>
                                                     </div>
@@ -256,6 +285,18 @@
                                             </div>
                                         </div>
                                         <div class="form-group">
+                                            <label class="col-sm-2 control-label">发布日期h5</label>
+                                            <div class="col-sm-6">
+                                                <input type="date" class="form-control" placeholder="Date">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">发布时间h5</label>
+                                            <div class="col-sm-6">
+                                                <input type="datetime-local" class="form-control" placeholder="Time">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
                                             <div class="col-sm-offset-2 col-sm-10">
                                                 <button type="button" class="btn btn-primary">保存</button>
                                                 <button type="button" class="btn btn-default">取消</button>
@@ -282,6 +323,20 @@
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <!-- date picker start -->
+    <script src="js/datepicker/bootstrap-datepicker.min.js"></script>
+    <!-- zh-cn -->
+    <script src="js/datepicker/bootstrap-datepicker.zh-CN.min.js"></script>
+    <!-- zh-tw -->
+    <!-- <script src="js/datepicker/bootstrap-datepicker.zh-TW.min.js"></script> -->
+    <script>
+    $('.date').datepicker({
+        format: "yyyy-mm-dd",
+        language: "zh-CN" //zh-cn
+        //language: "zh-TW" //zh-tw
+    });
+    </script>
+    <!-- date picker end -->
     <script src="js/tu.js"></script>
 </body>
 </html>
