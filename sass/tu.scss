@@ -54,7 +54,7 @@ body {
 }
 a {
     color: $darkgray-dark;
-    &:hover {
+    &:hover,&:focus,&:active {
         color: $darkgray-dark;
         text-decoration: none;
     }
