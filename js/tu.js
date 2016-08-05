@@ -62,16 +62,21 @@ $(function() {
         var threedata = {};
         select1.change(function() {
             select2.html('<option>请选择</option>');
-            select3.html('<option>请选择</option>');            
-            twodata = selectdata[$(this).val()].children;
-            $.each(twodata, function(selk, selv) {
-                if (select2.attr('data-default-val') == selk) {
-                    select2.append('<option value="'+selk+'" selected>'+selv.name+'</option>');
-                    select2.trigger('change');
-                } else {
-                    select2.append('<option value="'+selk+'">'+selv.name+'</option>');
-                }
-            });
+            select3.html('<option>请选择</option>');
+            if ($(this).val() > 0) {
+                twodata = selectdata[$(this).val()].children;
+                $.each(twodata, function(selk, selv) {
+                    if (select2.attr('data-default-val') == selk) {
+                        select2.append('<option value="'+selk+'" selected>'+selv.name+'</option>');
+                        select2.trigger('change');
+                    } else {
+                        select2.append('<option value="'+selk+'">'+selv.name+'</option>');
+                    }
+                });
+            } else {
+                select2.removeAttr('data-default-val');
+                select3.removeAttr('data-default-val');
+            }
         });
         select2.change(function() {
             select3.html('<option>请选择</option>');

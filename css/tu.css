@@ -9,7 +9,7 @@ a {
   color: #434A54;
 }
 /* line 57, ../sass/tu.scss */
-a:hover {
+a:hover, a:focus, a:active {
   color: #434A54;
   text-decoration: none;
 }
